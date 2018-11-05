@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<project name="Ant Basics" default="userDefinedProperties">
+
+	<property file="user-defined-props.properties"/>
+	
+	<target name="userDefinedProperties">
+		
+		<!--- Getting user defined property values from properties file -->
+		<echo> User defined property (technology) value is ---> ${technology} </echo>
+		<echo> User defined property trainer value defined in properties file is --->  ${trainer} </echo>
+		<echo> User defined property organization value defined in properties file is --->  ${organization} </echo>
+		
+	</target>
+
+</project>

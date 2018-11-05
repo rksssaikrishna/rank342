@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project name="Ant Basics" default="userDefinedProperties" >
+
+	<!---Define user defined properties and values   -->
+
+	
+
+    <property name="technology" value="Apache ANT"/>
+	<property name="trainer" value="Mithun Reddy L"/>
+	<property name="organization" value="Mithun Technologies"/>
+    
+
+	<property file="user-defined-props.properties" /> 
+	
+	
+	
+	
+	<target name="userDefinedProperties">
+		
+		<!--- Getting user defined property values  -->
+		<echo> User defined property (technology) value is ---> ${technology} </echo>
+		<echo> User defined property (trainer) value defined  is --->  ${trainer} </echo>
+		<echo> User defined property (organization) value defined  is --->  ${organization} </echo>
+		
+	</target>
+
+</project>
